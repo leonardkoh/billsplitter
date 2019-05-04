@@ -6,7 +6,7 @@ function splitBill() {
     }
 }
 function addEmail() {
-    console.log('email added');
+    console.log(`email added`);
 }
 function removeEmail() {
     console.log('email removed');

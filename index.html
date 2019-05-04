@@ -15,26 +15,29 @@
     <div class="six columns appContainer ctr">
         <h1>Bill Splitter</h1>
         <h5>Description</h5>
-        <input class="u-half-width ctr" id="numPersons" type="number" placeholder="Number of Persons">
-        <input class="u-half-width ctr" id="totalCost" type="number" placeholder="Total Cost">
+      <!-- <form> -->
+        <input class="u-half-width ctr" id="numPersons" type="number" placeholder="Number of persons">
+        <input class="u-half-width ctr" id="totalCost" type="number" placeholder="Total cost">
         <br>
         <button class="button-primary" onclick="splitBill()">1. Calculate</button>
         </br>
         <input class="u-half-width ctr" id="costPP" type="text" placeholder="Cost per person" readonly>
         <br>
-        <input class="u-half-width ctr" id="paypalLink" type="text" placeholder="My PayPal.me Link">
+        <input class="u-half-width ctr" id="paypalLink" type="text" placeholder="My PayPal.me link">
         </br>
-        <button class="button" onclick="addEmail()">2. Emails</button>
+        <button>2. Emails</button>
         <i class="fa fa-info-circle fa-lg"></i>
         <br>
         <button class="button-primary" onclick="addEmail()">Add +</button>
         <button class="button-primary" onclick="removeEmail()">Remove -</button>
         </br>
-        <input class="u-half-width ctr" id="emailAddresses" type="email" placeholder="Email addresses">
-        </br>
+        <div id="emailAddresses">
+          <input class="u-half-width ctr" type="email" placeholder="Enter email">
+        </div>
         <button class="button-primary" onclick="requestPayment()">3. Request Payment</button>
         <div class="ctr"><div id="loader"></div></div>
         <div id="result"></div>
+      <!-- </form> -->
     </div>
     <div class="three columns"></br></div>
   </body>
