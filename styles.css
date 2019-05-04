@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-.rw {
-    font-family: 'Raleway', sans-serif;
+.fa-info-circle {
+    color: grey;
+    margin: auto;
+    padding: auto;
 }
 .headerSpace {
     height: 5vw;
@@ -18,8 +20,10 @@
     border: none;
 }
 .loader {
-    width: 5vw;
-    height: 5vw;
+    width: 3vw;
+    height: 3vw;
+    padding: auto;
+    margin: auto;
     animation-name: spin;
     animation-duration: 2000ms;
     animation-iteration-count: infinite;
