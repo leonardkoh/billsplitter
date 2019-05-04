@@ -11,11 +11,25 @@
     padding: 1vw;
     background: #eee;
 }
-
 .ctr {
     text-align: center;
 }
-
-.borderNone {
-    
+.noBorder {
+    border: none;
 }
+.loader {
+    width: 5vw;
+    height: 5vw;
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    border-top: 0.3vw solid #49AFDB;
+    border-right: 0.3vw solid transparent;
+    border-radius: 50%;
+    text-align: center;
+  }
+  @keyframes spin {
+      from { transform:rotate(0deg); }
+      to { transform:rotate(360deg); }
+  }

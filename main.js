@@ -12,5 +12,7 @@ function removeEmail() {
     console.log('email removed');
 }
 function requestPayment() {
-    document.getElementById("result").innerHTML = 'Payment request sent';
+    document.getElementById("loader").innerHTML = '<div class="loader"></div>';
+    setTimeout(() => { document.getElementById("result").innerHTML = 'Payment request sent'; }, 2000);
+    setTimeout(() => { document.getElementById("loader").innerHTML = ''; }, 2000);
 }

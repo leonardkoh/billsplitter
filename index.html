@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Skeleton CSS 2.0.4 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
     <link rel="stylesheet" href="./styles.css">
     <script src="./main.js" defer></script>
@@ -17,21 +16,22 @@
         <h5>Description</h5>
         <input class="u-half-width ctr" id="numPersons" type="number" placeholder="Number of Persons">
         <input class="u-half-width ctr" id="totalCost" type="number" placeholder="Total Cost">
+        <br>
         <button class="button-primary" onclick="splitBill()">1. Calculate</button>
         </br>
         <input class="u-half-width ctr" id="costPP" type="text" placeholder="Cost per person" readonly>
         <br>
         <input class="u-half-width ctr" id="paypalLink" type="text" placeholder="My PayPal.me Link">
         </br>
-        <text class="button">2. Add Emails</text>
+        <button class="button" onclick="addEmail()">2. Emails</button>
         <br>
-        <button class="button-primary" onclick="addEmail()">+</button>
-        <button class="button-primary" onclick="removeEmail()">-</button>
+        <button class="button-primary" onclick="addEmail()">Add +</button>
+        <button class="button-primary" onclick="removeEmail()">Remove -</button>
         </br>
         <input class="u-half-width ctr" id="emailAddresses" type="email" placeholder="Email addresses">
         </br>
         <button class="button-primary" onclick="requestPayment()">3. Request Payment</button>
-        <p class="rw">spinner icon</p>
+        <div class="ctr"><div id="loader"></div></div>
         <div id="result"></div>
     </div>
     <div class="three columns"></br></div>
