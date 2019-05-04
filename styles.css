@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.rw {
+    font-family: 'Raleway', sans-serif;
+}
+.headerSpace {
+    height: 5vw;
+}
+.appContainer {
+    border: 0.1vw solid #d3d3d3;
+    padding: 1vw;
+    background: #eee;
+}
+
+.ctr {
+    text-align: center;
+}
+
+.borderNone {
+    
+}
