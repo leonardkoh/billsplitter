@@ -6,7 +6,7 @@ function splitBill() {
     }
 }
 function addEmail() {
-    $("#emailAddresses").append('<input id="email" class="u-half-width ctr" type="email" placeholder="Enter email"></input>');
+    $("#emailAddresses").append('<input id="email" class="u-half-width ctr" type="email" placeholder="Enter email">');
 }
 function removeEmail() {
     $("#email").remove();
