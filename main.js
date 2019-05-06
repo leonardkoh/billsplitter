@@ -9,7 +9,7 @@ function addEmail() {
     $("#emailAddresses").append('<input id="email" class="u-half-width ctr" type="email" placeholder="Enter email">');
 }
 function removeEmail() {
-    $("#email").remove();
+    $("#emailAddresses #email:last-child").remove();
 }
 function getEmails() {
     // $("#emailAddresses").each(() => console.log($(this).val())); 
