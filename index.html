@@ -12,11 +12,10 @@
   </head>
   <body>
     <div class="headerSpace"></br></div>
-    <div class="three columns"></br></div>
-    <div class="six columns appContainer ctr">
+      <div class="three columns"></br></div>
+      <div class="six columns appContainer ctr">
         <h1>Bill Splitter</h1>
         <h5>Description</h5>
-      <!-- <form> -->
         <input class="u-half-width ctr" id="numPersons" type="number" placeholder="Number of persons">
         <input class="u-half-width ctr" id="totalCost" type="number" placeholder="Total cost">
         <br>
@@ -32,15 +31,15 @@
         <button class="button-primary" onclick="addEmail()">Add +</button>
         <button class="button-primary" onclick="removeEmail()">Remove -</button>
         <button class="button-primary" onclick="getEmails()">Get emails</button>
-        </br>
-        <div id="emailAddresses">
-          <input class="u-half-width ctr" type="email" placeholder="Enter email">
-        </div>
-        <button class="button-primary" onclick="requestPayment()">3. Request Payment</button>
-        <div class="ctr"><div id="loader"></div></div>
-        <div id="result"></div>
-      <!-- </form> -->
-    </div>
+      </br>
+      <div id="emailAddresses">
+        <input class="u-half-width ctr" type="email" placeholder="Enter email">
+      </div>
+        <form>
+          <input type="submit" class="button-primary" value="3. Request Payment"  onclick="requestPayment()">
+          <div id="result"></div>
+        </form>
+      </div>
     <div class="three columns"></br></div>
   </body>
 </html>

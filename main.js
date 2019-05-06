@@ -9,7 +9,7 @@ function addEmail() {
     $("#emailAddresses").append('<input id="email" class="u-half-width ctr" type="email" placeholder="Enter email">');
 }
 function removeEmail() {
-    $("#emailAddresses #email:last-child").remove();
+    $("#emailAddresses #email").last().remove();
 }
 function getEmails() {
     // $("#emailAddresses").each(() => console.log($(this).val())); 
@@ -28,4 +28,10 @@ function requestPayment() {
     // setTimeout(() => { document.getElementById("loader").innerHTML = ''; }, 2000);
     
     $("#result").append("<div>Payment request sent</div>");
+}
+function submit() {
+    $("#result").append("<div>Payment request sent</div>");
+
+    // setTimeout(() => { $("#result").append("<div>Payment request submitted </div>"); }, 2000);
+    console.log('submit');
 }
